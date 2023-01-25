@@ -1,0 +1,192 @@
+// _header.sass
+
+@import vars
+    
+
+.header
+    width: 100%
+    
+    
+    align-items: center
+    
+    
+    
+    &__conteiner
+        max-width: 100%
+        margin: 0 auto
+        padding: 0 15px
+        
+    &__inner
+        display: flex
+        justify-content: space-between
+        
+        padding: 15px 
+        
+        width: 95%
+        
+        position: fixed
+    
+        z-index: 200
+        
+        background: #fff
+    
+    &__box
+        display: flex
+        
+    &__login
+        padding: 8px 29px
+        
+        border: 1px solid $color-green
+        border-radius: 4px
+        text-decoration: none
+        color: $color-green
+        
+        font-weight: 600
+        font-size: 16px
+        
+        transition: background .3 linear
+        transition: color .3 linear
+        
+        &:hover
+            background-color: $color-green
+            color: #fff
+        
+        
+    
+.nav
+    display: flex
+    align-items: center
+    
+    
+    &__ul
+        display: flex
+        list-style-type: none
+        
+        z-index: 10
+        
+    
+    &__link
+        text-decoration: none
+        margin-left: 15px
+        color: $color-black
+        
+        font-weight: 600
+        font-size: 16px
+        
+        align-self: center
+        
+        &:hover
+            text-decoration: underline
+        
+        
+.header__burger
+    display: none
+    
+    position: relative
+    
+    width: 40px
+    height: 40px
+    
+    border: none
+    background: #fff
+    
+    z-index: 100
+    
+    &-span
+        width: 30px
+        height: 2px
+        
+        position: absolute
+        background: $color-black
+        
+        left: 5px
+        
+        &:nth-child(1)
+            transform: translateY(-10px)
+        
+        &:nth-child(3)
+            transform: translateY(10px)
+    
+    
+    
+    
+    
+    
+    
+@media screen and (max-width:992px)
+    .header__burger
+        display: block
+        
+    .header__logo
+        position: absolute
+        
+        right: 15px
+        top: 15px
+    
+    .nav
+        
+        
+        position: absolute
+        width: 450px
+        top: -100px 
+        left: -450px
+        
+        min-height: 800px
+        
+        
+        &__ul
+            display: block
+            background: #fff
+            
+            padding: 70px 100px
+            
+            transition: transform .6s linear
+            
+        &__li
+            margin-bottom: 25px
+            
+        &__link
+            font-size: 30px
+            
+            
+    .header__login
+        z-index: 20
+        
+        position: absolute
+        
+        left: 120px
+        top: 10px
+        
+        
+        
+        
+.nav.open .nav__ul
+    transform: translateX(100%)
+    
+            
+            
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        

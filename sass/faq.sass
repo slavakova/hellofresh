@@ -1,0 +1,124 @@
+// _faq.sass
+
+@import vars
+    
+.faq
+    
+    background: #f8f8f8
+    
+    &__inner
+    padding: 16px 280px
+    
+    text-align: center
+    
+    
+
+    &__title
+        font-weight: 400
+        font-size: 37px
+        
+        color: $color-black
+        
+        margin-bottom: 16px
+        
+    &__content
+        text-align: left
+        
+    &__input
+        width: 0
+        height: 0
+        
+        appearance: none
+        
+        position: absolute
+        
+    
+    &__headline
+        display: block
+        position: relative
+        
+        padding: 23px 0 23px 56px
+        
+        font-weight: 600
+        font-size: 16px
+        
+        cursor: pointer
+        
+        color: $color-black
+        
+        &:before
+            content: ''
+            width: 40px
+            height: 40px
+        
+            position: absolute
+            left: 5px
+            top: 50%
+        
+            transform: translateY(-50%)
+        
+            border: 1px solid $color-black 
+            border-radius: 50%
+        
+        &:after
+            display: block
+            content: ''
+            
+            width: 12px
+            height: 12px
+        
+            
+            border-right: 1px solid $color-black
+            border-bottom: 1px solid $color-black
+        
+            
+            
+            position: absolute
+        
+            left: 19px
+            top: 40%
+        
+            transform: translateY(-40%)
+            transform: rotate(45deg)
+        
+        
+    &__text
+        display: none
+        
+        padding-left: 56px
+        
+        font-weight: 600
+        font-size: 14px
+        
+        color: $color-black    
+        
+.faq__input:checked ~ .faq__text
+    display: block
+    
+.faq__input:checked ~ .faq__headline:after
+    transform: rotate(-135deg)
+    
+    
+    
+    
+     
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        

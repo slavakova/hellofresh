@@ -1,0 +1,94 @@
+// _insidebox.sass
+
+@import vars
+    
+.insidebox
+    margin-top: 45px
+    
+    &__inner
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        
+        align-items: center
+        
+    &__image
+        width: 50%
+        
+        margin-bottom: 60px
+        
+    &__img
+        display: block
+        
+        width: 100%
+        height: auto
+        
+    &__content
+        width: 50%
+        
+        text-align: center
+        
+    &__title
+        font-family: $font-inter
+        
+        font-weight: 400
+        font-size: 23px
+        
+        color: $color-black
+        
+        margin-bottom: 15px
+        
+    &__list
+        list-style: none
+        
+    &__list li
+        margin-bottom: 15px
+        
+        &:last-child
+            margin-bottom: 32px       
+        
+    &__btn
+        padding: 12px 178px
+        background: $color-green
+    
+        border: 1px solid $color-green
+        border-radius: 4px
+        
+        font-weight: 600
+        font-size: 16px
+        color: #fff
+    
+        text-decoration: none
+    
+        transition: background .3s linear
+        transition: color .3s linear
+    
+        &:hover
+            color: $color-green
+            background: #fff
+        
+
+        
+@media screen and (max-width:992px)
+    .insidebox__image
+        width: 100%
+        
+        
+        
+    .insidebox__content
+        width: 100%    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
